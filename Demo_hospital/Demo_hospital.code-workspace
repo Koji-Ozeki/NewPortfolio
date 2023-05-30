@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Portfolio_skill"
+		},
+		{
+			"path": "../Demo_mountain"
+		},
+		{
+			"path": "../LP_1"
+		},
+		{
+			"path": "../LP_2"
+		},
+		{
+			"path": "../Portfolio"
+		},
+		{
+			"path": "../Portfolio_about"
+		},
+		{
+			"path": "../Portfolio_contact"
+		},
+		{
+			"path": "../Portfolio_product"
+		},
+		{
+			"path": "../Portfolio_service"
+		}
+	],
+	"settings": {}
+}

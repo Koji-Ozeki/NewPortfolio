@@ -1,0 +1,140 @@
+body{
+  max-width: 1000px;
+  margin:0 auto;
+  padding:0;
+}
+
+*{
+  text-decoration: none;
+  list-style: none;
+  color:black;
+  padding:0;
+  margin:0;
+}
+
+.sponly{
+  display: none;
+}
+
+.title{
+  max-width:1000px;
+  text-align: center;
+  margin:5% 0;
+}
+
+.title span{
+  border-bottom: 4px solid var(--maincontents)
+}
+
+.menu ul{
+  display: flex;
+  font-size:1vw;
+  margin:5% 0;
+  display: block;
+  text-align: left;
+}
+
+.header ul{
+  display: block;
+  text-align: right;
+}
+
+:root{
+  --maincontents:rgba(81, 206, 255, 0.5);
+}
+
+.menu ul li{
+  display: inline;
+  margin: 0;
+  padding: 10px 15px;
+  background-color: #fff8bb94;
+  background-image: -webkit-linear-gradient(-45deg, var(--maincontents) 25%, transparent 25%, transparent 50%, var(--maincontents) 50%, var(--maincontents) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, var(--maincontents) 25%, transparent 25%, transparent 50%, var(--maincontents) 50%, var(--maincontents) 75%, transparent 75%, transparent);
+  background-size: 12px 12px;
+  font-weight: bold;
+}
+
+.menu ul li{
+  padding:0 5px;
+}
+
+.skill{
+  text-align: center;
+}
+
+.skill img{
+  width: 200px;
+  height: 200px;
+}
+
+.skill_contents{
+  margin-top:3%;
+  display:grid;
+  gap:2%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(fill, 1fr);
+  justify-items: center;
+}
+
+.skill_contents img{
+  margin:0 1%;
+}
+
+.skill p{
+  padding:0;
+  margin:0 1%;
+}
+
+.skill p a{
+  font-weight: bold;
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+
+
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+  font-size: 7vw;
+  text-align: center;
+}
+
+/* レスポンシブ */
+@media(max-width:660px){
+  .skill_contents{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill{
+    text-align:left;
+  }
+}
+
+@media(max-width:400px){
+  .skill_contents{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media(max-width:360px){
+  .sponly{
+    display: block;
+  }
+
+  .menu ul li{
+    font-weight: normal;
+  }
+}

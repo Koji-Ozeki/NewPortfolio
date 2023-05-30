@@ -1,0 +1,166 @@
+body{
+  max-width: 1000px;
+  margin:0 auto;
+  padding:0;
+}
+
+*{
+  text-decoration: none;
+  list-style: none;
+  color:black;
+  padding:0;
+  margin:0;
+}
+
+.sponly{
+  display: none;
+}
+
+.title{
+  max-width:1000px;
+  text-align: center;
+  margin:5% 0;
+}
+
+.title span{
+  text-shadow: #432aff 10px 5px;
+}
+
+.menu ul{
+  display: flex;
+  font-size:1vw;
+  margin:5% 0;
+  display: block;
+  text-align: left;
+}
+
+.header ul{
+  display: block;
+  text-align: right;
+}
+
+.menu ul li{
+  display: inline;
+  background: linear-gradient(#05FBFF, #7664ff);
+  font-weight: bold;
+}
+
+.menu ul li{
+  padding:0 5px;
+}
+
+.message{
+  padding:0 3%;
+}
+
+.message_image{
+  display: flex;
+}
+
+.message_image img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 6px solid;
+  border-image: linear-gradient(to right, #82fdff 0%, #9e9cff 100%);
+  border-image-slice: 1;
+}
+
+.message_profile{
+  display: flex;
+  padding-left:5%;
+  width: 100%;
+  margin:auto 0;
+}
+
+.message p{
+  margin-top:5%;
+}
+
+.profile_name{
+  padding-left:5%;
+}
+
+.footer ul li:nth-child(1){
+  margin-left:3%;
+}
+
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+
+.main {
+  width: 100%;
+  height: 229px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main span {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+  font-size: 7vw;
+  text-align: center;
+  width: 23ch;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 400;
+  border-right: 2px solid transparent;
+  animation: typing 5s steps(28), caret 0.5s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    border-right-color: currentColor;
+  }
+}
+
+
+/* レスポンシブ */
+@media(max-width:800px){
+  .message_image img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media(max-width:620px){
+  .message_image{
+    display: block;
+    text-align: center;
+  }
+  .message_profile{
+    justify-content: center;
+  }
+
+  .profile_comtents{
+    text-align: end;
+  }
+
+  .profile_name{
+    text-align: start;
+  }
+}
+
+@media(max-width:360px){
+  .sponly{
+    display: block;
+  }
+
+  .menu ul li{
+    font-weight: normal;
+  }
+}

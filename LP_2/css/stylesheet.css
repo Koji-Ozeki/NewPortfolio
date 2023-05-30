@@ -1,0 +1,584 @@
+body{
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+
+/* ヘッダー */
+header{
+  height: 100px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+}
+header img{
+  margin-left: 3%;
+}
+
+.header_contents{
+  height: 100px;
+  width: 100%;
+  position:fixed;
+  margin:0;
+  display: flex;
+  z-index: 3;
+  background-color: rgb(255, 255, 255);
+}
+
+.header_contents img{
+  height:100%;
+}
+
+.header_contents h2{
+  margin:auto 0;
+}
+
+.SpOnly{
+  display: none;
+}
+
+
+/*ナビメニューのスタイルを指定*/
+nav.NavMenu{
+  position: fixed; 
+  z-index: 2; 
+  top: 0px; 
+  right: 0; 
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0); 
+  width: 70%; 
+  transform: translateY(-100%); 
+  transition: all 0.3s;
+  padding-top:100px; 
+}
+
+nav.NavMenu ul{
+  /* background: rgb(42, 27, 255); */
+  width: 100%;
+  padding: 0;
+}
+
+nav.NavMenu ul li{
+  font-size: 1.1em;
+  list-style-type: none;
+  padding: 0;
+  margin-left:20px;
+  width: 100%;
+}
+
+nav.NavMenu ul li:last-child{
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+nav.NavMenu ul li a{
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+  margin:0;
+  text-decoration: none;
+}
+
+nav.NavMenu.active{
+  transform: translateY(0%);
+  background: rgb(255, 255, 255);
+  }
+
+  .Toggle {
+    display: block;
+    position: fixed;
+    right: 13px;
+    top: 20px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 3;
+    background: rgb(255, 255, 255);
+}
+ 
+.Toggle span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 3px #000;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    right: 10%;
+}
+ 
+.Toggle span:nth-child(1) {
+    top: 10px;
+}
+ 
+.Toggle span:nth-child(2) {
+    top: 25px;
+}
+ 
+.Toggle span:nth-child(3) {
+    top: 40px;
+}
+ 
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+    top: 25px;
+    right: 10%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* コンテイナー */
+.container{
+  width: 100%;
+  z-index: 10;
+}
+
+.container img{
+  position: absolute;
+}
+
+.container h3{
+  position: relative;
+  color: white;
+  text-align: center;
+  margin:0;
+  padding:3% 0;
+  font-size:4vw;
+}
+
+.box{
+  display: flex;
+  margin-top: 30%;
+}
+
+.box_contents{
+  padding:10px 30px;
+  text-align: center;
+  margin:0 auto;
+  width: 30%;
+  border-radius:8vw;
+  text-decoration: none;
+}
+
+.downroad{
+  background-color: rgb(14, 14, 14);
+}
+
+.Inquiry{
+  background-color: rgb(0, 17, 255);
+}
+
+.box_contents p{
+  margin:5px 0;
+  color: rgb(255, 255, 255);
+  font-size:1.5vw;
+}
+
+.infomation a{
+  display: block;
+  margin:0;
+  padding:0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.infomation_contents{
+  display: flex;
+  border-bottom:black 1px dotted;
+  font-size: 1vw;
+  margin:10px 0;
+}
+
+.infomation{
+  margin:0 auto;
+  max-height: 250px;
+  margin-top:50px;
+  padding:30px 10px;
+  width: 90%;
+  overflow: scroll;
+}
+
+.infomation::-webkit-scrollbar {
+  display:none;
+}
+
+.infomation a p{
+  margin: 0 20px;
+  padding:0;
+  
+}
+
+.icon{
+  background-color: rgb(63, 60, 253);
+  margin:0 10px;
+  padding:3px 5px;
+  color: white;
+  border-radius: 10px;
+}
+
+.info_all{
+  width: 50%;
+  margin:0 auto;
+  padding:0;
+}
+
+.info_all a{
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+.info_all p{
+  background-color: rgb(0, 17, 255);
+  color:white;
+  margin:0;
+  margin-top:10px;
+  text-align: center;
+  padding:3px 5px;
+  border-radius: 8vw;
+}
+
+.inner{
+  width: 80%;
+  margin:0 auto;
+  margin-top:80px;
+}
+
+.inner ul{
+  list-style-type: none;
+  padding:0;
+}
+
+.innerlist{
+  margin:50px 0;
+  position: relative;
+  background-color: black;
+}
+
+.innerlist img{
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  opacity: 0.5;
+  vertical-align: top;
+}
+
+.innner_com{
+  position: absolute;
+  color: rgb(246, 246, 246);
+  font-size:2vw;
+  font-family :Quicksand, sans-serif;
+  font-weight: bold;
+  top: 20px;
+  left: 5%;
+  width: 90%;
+}
+
+.about{
+  width: 90%;
+  margin:0 auto;
+  margin-top:100px;
+}
+
+.about_contents{
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.about_img{
+  width: 100%;
+  opacity: .7;
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  vertical-align: top;
+}
+
+.about_msg{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  font-size:3vw;
+}
+
+.about_msg h2,h3{
+  margin:0;
+  padding:10px 0;
+}
+
+.about_contents > h2{
+  position: absolute;
+  width: 100%;
+  font-size:15vw;
+  text-align: center;
+  color: rgba(235, 235, 235, 0.6);
+  opacity: .8;
+  margin:0;
+  top: 80%;
+}
+
+/* サービス */
+.about > h2,.about > p{
+  text-align: center;
+  margin:0;
+  padding:30px 0;
+  font-size:3vw;
+}
+
+.about > p{
+  font-size:2vw;
+  margin-bottom:30px;
+}
+
+.service{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(fill, 1fr);
+  gap:10px 0;
+}
+
+.service_contents{
+  width: 90%;
+  background-color: rgb(246, 246, 246);
+  justify-self: center;
+  text-align: center;
+}
+
+.service_contents a{
+  text-decoration: none;
+  color:black;
+  font-size: 2vw;
+}
+
+.service_contents a p{
+  margin:0;
+}
+
+.service_contents img{
+  width: 100%;
+}
+
+/* スライド */
+.product{
+  margin-top:80px;
+}
+
+.sam_slide{
+  margin:30px 0;
+}
+
+.slider_thumb img{
+  transition:.3s;
+ }
+ .slider_thumb img:hover{
+   transform:scale(1.1,1.1);
+   transition:.3s;
+ }
+
+ .thumb img{
+  overflow: hidden;
+  transition:.3s;
+ }
+
+ .thumb img:hover{
+   transform:scale(1.1,1.1);
+   transition:.3s;
+ }
+
+ .slick-prev.slick-next {
+  margin:0 3%;
+}
+
+/* 社員紹介 */
+.Employee{
+  margin-top: 100px;
+}
+
+.Employee ul{
+  padding:0;
+  width: 90%;
+  margin:0 auto;
+}
+
+.Employee ul li{
+  display: flex;
+  height: 50vw;
+}
+
+.Employee ul li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.Employee ul li img{
+  width: 40%;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+
+.Employee_intro{
+  text-align: center;
+  margin:5%;
+  font-size: 2vw;
+}
+
+.Employee_intro p{
+  text-align: left;
+}
+
+/* 共同 */
+.congruence{
+  margin-top:80px;
+  width: 100%;
+}
+
+.congruence img{
+  width: 100%;
+  position: absolute;
+}
+
+.congruence_com{
+  width: 80%;
+  margin:0 auto;
+  padding-top:5%;
+  position: relative;
+  font-weight: bold;
+  color: white;
+  font-size: 3vw;
+}
+
+.congruence_com > h2,.congruence_com > p{
+  margin:0;
+  padding:0;
+}
+
+.congruence_com > h2{
+  text-align: center;
+}
+
+/* 会社概要 */
+.company{
+  margin-top:50%;
+}
+
+.company_profile{
+  display: flex;
+}
+
+.company_profile img{
+  width: 50%;
+}
+
+.company_profile_address{
+  margin-left: 5%;
+}
+
+.company_profile_address p{
+  margin:10px 0;
+  padding:10px;
+  font-size: 3vw;
+  border-bottom:dotted 1px black;
+}
+
+/* fotter */
+.footer_info{
+  list-style: none;
+  display: flex;
+  font-size:2vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0;
+  margin:80px 0;
+  padding:50px 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.footer_info li{
+  margin:0 10px;
+}
+
+.footer_info a{
+  text-decoration: none;
+  color: #4d4b4b;
+}
+
+/* レスポンシブ */
+@media(max-width:600px){
+  .about > h2,.about > p{
+    margin:0;
+    padding:10px 0;
+  }
+
+  .service{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(fill, 1fr);
+  }
+
+  .footer_info{
+    margin:40px 0;
+  }
+}
+
+@media(max-width:410px){
+  .header_contents h2{
+    font-size: 16px;
+  }
+
+  .box_contents{
+    padding:5px 20px;
+  }
+
+  .infomation_contents{
+    display: block;
+  }
+  
+    .infomation{
+      margin-top:30px;
+    }
+
+  .infomation a{
+    display: block;
+    padding-top:10px;
+  }
+
+  .company_profile{
+    display: block;
+    text-align: center;
+  }
+
+  .company_profile img{
+    width: 60%;
+  }
+
+  .company_profile_address{
+    text-align: left;
+  }
+
+}
+
+@media(max-width:360px){
+  .box_contents{
+    padding:0 10px;
+  }
+
+  .infomation{
+    width: 100%;
+  }
+
+  .footer_info{
+    margin:20px 0;
+  }
+
+  .SpOnly{
+    display: block;
+  }
+}

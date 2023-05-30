@@ -1,0 +1,36 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+}
+
+.contact_massage{
+  max-width:850px;
+  margin:0 auto;
+}
+
+.contact_massage h1{
+  color:rgb(235, 82, 82);
+  font-size: 24px;
+  text-align: center;
+  margin-top:60px;
+  margin-bottom:50px;
+  font-weight: bold;
+}
+
+.contact_massage p{
+  color:rgb(44, 44, 44);
+  font-size: 20px;
+}
+
+.mail span{
+  vertical-align: bottom;
+  color:rgb(44, 44, 44);
+  font-size: 20px;
+  background: linear-gradient(transparent 70%,skyblue 70%);
+}

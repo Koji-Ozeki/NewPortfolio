@@ -1,0 +1,121 @@
+body{
+  width: 100%;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+*{
+  text-decoration: none;
+  color:black;
+}
+
+.spOnly{
+  display: none;
+}
+
+
+.contact p{
+  margin:0 auto;
+}
+
+.input_text{
+  width: 300px;
+  height:2em;
+  margin:20px 0;
+}
+
+.free_text{
+  height:10em;
+}
+
+/* ヘッダー、フッター */
+.menu ul{
+  display: flex;
+  font-size:1vw;
+  margin:5% 0;
+  display: block;
+  padding:0;
+  text-align: left;
+}
+
+.header ul{
+  display: block;
+  text-align: right;
+}
+
+
+
+.menu ul li{
+  display: inline;
+  margin: 0;
+  font-weight: bold;
+  padding:0 5px;
+  font-size: 2vw;
+}
+
+
+.footer{
+  margin-top:30px;
+}
+
+/* 確認画面 */
+.contact-title{
+  width: 70%;
+  margin:0 auto;
+  padding:1% 0;
+  background-color: rgb(218, 249, 253);
+  margin-bottom:1%;
+  border-radius:15px;
+}
+
+.contact-title h2,.contact-title p{
+  margin:0;
+  padding:0 2%;
+}
+
+.check{
+background-color: rgb(219, 219, 219);
+width: 60%;
+border:rgb(32, 32, 32) 1px solid;
+}
+
+/* レスポンシブ */
+@media(max-width:530px){
+  .contact-title p{
+    text-align: left;
+  }
+}
+
+@media(max-width:410px){
+  .spOnly{
+    display: block;
+  }
+
+  .form-detailcontents{
+    text-align: left;
+    width: 280px;
+    }
+}
+@media(max-width:320px){
+  .input_text{
+    width: 90%;
+  }
+
+  .free_text{
+    height:5em;
+  }
+  .menu ul li{
+    padding:0 3px;
+  }
+}
+@media(max-width:280px){
+  .form-detailcontents{
+    text-align: left;
+    width: 90%;
+  }
+  .spOnly{
+    display: none;
+  }
+
+}
